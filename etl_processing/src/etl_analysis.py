@@ -3,8 +3,8 @@ import pandas as pd
 import os
 
 # --- PATHS ---
-parcels_path = r"C:\Users\andre\Desktop\GIT Resources\gis-portfolio\etl\data\raw\PARCELS_CREST.shp"
-output_folder = r"C:\Users\andre\Desktop\GIT Resources\gis-portfolio\etl\data\output"
+parcels_path = r"C:\Users\andre\Desktop\GIT Resources\gis-portfolio\etl_processing\data\raw\PARCELS_CREST.shp"
+output_folder = r"C:\Users\andre\Desktop\GIT Resources\gis-portfolio\etl_processing\data\output"
 
 # Ensure output folder exists
 os.makedirs(output_folder, exist_ok=True)
@@ -21,7 +21,7 @@ total_parcels = len(parcels)
 missing_geom_mask = parcels['geometry'].isna()
 
 # Duplicate APN flag (ALL duplicates)
-duplicate_mask = parcels.duplicated(subset=['APN'], keep=False)
+duplicate_mask = parcels.duplicated(subset=['APN'], keep=False) #if keep='first' will only list the duplicates, not the first instance
 
 # Create issues DataFrame
 issues_df = parcels[['APN']].copy()
@@ -33,7 +33,7 @@ issues_df = issues_df[
     (issues_df['MISSING_GEOMETRY']) | (issues_df['DUPLICATE_APN'])
 ]
 
-# Add issue count (nice touch)
+# Add issue count
 issues_df['ISSUE_COUNT'] = (
     issues_df['MISSING_GEOMETRY'].astype(int) +
     issues_df['DUPLICATE_APN'].astype(int)
