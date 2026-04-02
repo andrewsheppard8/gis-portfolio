@@ -1,0 +1,4 @@
+2026-04-02 11:49:53,020 - INFO - ETL process started
+2026-04-02 11:49:53,779 - INFO - GDAL signalled an error: err_no=4, msg='C:\\Users\\andre\\Desktop\\GIT Resources\\gis-portfolio\\data\\raw\\Parcels.shp: No such file or directory'
+2026-04-02 11:51:34,096 - INFO - ETL process started
+2026-04-02 11:51:34,216 - INFO - GDAL signalled an error: err_no=4, msg='C:\\Users\\andre\\Desktop\\GIT Resources\\gis-portfolio\\data\\raw\\Parcels.shp: No such file or directory'

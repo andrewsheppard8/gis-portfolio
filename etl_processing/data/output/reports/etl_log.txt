@@ -1,15 +1,20 @@
-2026-04-01 14:20:00,138 - INFO - ETL process started
-2026-04-01 14:20:00,898 - WARNING - PROJ: proj_identify: C:\Program Files\PostgreSQL\18\share\contrib\postgis-3.6\proj\proj.db contains DATABASE.LAYOUT.VERSION.MINOR = 2 whereas a number >= 5 is expected. It comes from another PROJ installation.
-2026-04-01 14:20:00,919 - WARNING - PROJ: proj_identify: C:\Program Files\PostgreSQL\18\share\contrib\postgis-3.6\proj\proj.db contains DATABASE.LAYOUT.VERSION.MINOR = 2 whereas a number >= 5 is expected. It comes from another PROJ installation.
-2026-04-01 14:20:01,083 - INFO - Exported schema report
-2026-04-01 14:20:01,122 - INFO - Exported data quality issues \u2192 C:\GIT Resources\gis-portfolio\etl_processing\data\output\reports\data_quality_issues.csv
-2026-04-01 14:20:01,138 - INFO - Exported summary report \u2192 C:\GIT Resources\gis-portfolio\etl_processing\data\output\reports\etl_summary_report.csv
-2026-04-01 14:20:06,466 - INFO - Created geodatabase \u2192 C:\GIT Resources\gis-portfolio\etl_processing\data\output\gdb\etl_output.gdb
-2026-04-01 14:20:07,961 - INFO - Exported original parcels to GDB and added spatial index
-2026-04-01 14:20:08,669 - INFO - Exported clean parcels to GDB and added spatial index
-2026-04-01 14:20:09,312 - INFO - Exported dirty parcels to GDB and added spatial index
-2026-04-01 14:20:10,197 - INFO - Replaced string field DATE_ADDED with proper Date field in original_parcels
-2026-04-01 14:20:10,984 - INFO - Replaced string field DATE_ADDED with proper Date field in clean_parcels
-2026-04-01 14:20:11,677 - INFO - Replaced string field DATE_ADDED with proper Date field in dirty_parcels
-2026-04-01 14:20:11,682 - INFO - Updated field schemas
-2026-04-01 14:20:11,693 - INFO - Removed temp shapefiles
+2026-04-02 11:54:59,302 - INFO - ETL process started
+2026-04-02 11:54:59,302 - INFO - Total Parcels: 725
+2026-04-02 11:54:59,303 - INFO - Missing Geometry: 4
+2026-04-02 11:54:59,303 - INFO - Unique Duplicate APNs: 11
+2026-04-02 11:54:59,303 - INFO - Out of Date Parcel: 153
+2026-04-02 11:54:59,303 - INFO - Invalid APNs: 0
+2026-04-02 11:54:59,303 - INFO - Invalid Acreage: 4
+2026-04-02 11:54:59,303 - INFO - Invalid Geometry: 4
+2026-04-02 11:54:59,303 - INFO - Empty Geometry: 0
+2026-04-02 11:55:34,811 - INFO - ETL process started
+2026-04-02 11:55:34,812 - INFO - Total Parcels: 725
+2026-04-02 11:55:34,812 - INFO - Missing Geometry: 4
+2026-04-02 11:55:34,812 - INFO - Unique Duplicate APNs: 11
+2026-04-02 11:55:34,812 - INFO - Out of Date Parcel: 153
+2026-04-02 11:55:34,813 - INFO - Invalid APNs: 0
+2026-04-02 11:55:34,813 - INFO - Invalid Acreage: 4
+2026-04-02 11:55:34,813 - INFO - Invalid Geometry: 4
+2026-04-02 11:55:34,813 - INFO - Empty Geometry: 0
+2026-04-02 11:55:34,879 - INFO - Created 570 records
+2026-04-02 11:55:34,895 - INFO - Created 155 records

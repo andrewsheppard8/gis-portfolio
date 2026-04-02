@@ -58,8 +58,11 @@ import datetime
 import logging
 
 # --- PATHS SETUP ---
-parcels_path = r"C:\Users\andre\Desktop\GIT Resources\gis-portfolio\etl_processing\data\raw\Parcels.shp"
-output_folder = r"C:\Users\andre\Desktop\GIT Resources\gis-portfolio\etl_processing\data\output"
+# Base directory: two levels up from the script (repo root)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Input and output paths
+parcels_path = os.path.join(BASE_DIR, "data", "raw", "Parcels.shp")
+output_folder = os.path.join(BASE_DIR, "data", "output")
 output_reports = os.path.join(output_folder, "reports")
 output_shapefiles = os.path.join(output_folder, "shapefiles")
 
