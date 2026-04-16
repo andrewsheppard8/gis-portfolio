@@ -72,10 +72,6 @@
 
 ###### 3\. Store session via ArcGIS IdentityManager
 
-###### 
-
-###### > Note: This example uses `popup: false` and `flowType: "auto"` for redirect-based authentication.
-
 
 
 # 👤 Author
